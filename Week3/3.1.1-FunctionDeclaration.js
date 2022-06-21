@@ -2,10 +2,18 @@
 const greet = function() {
   console.log("Hello!");
 };
+function greet() {
+  console.log("Hello!");
+}
+
 
 const threeModTwo = function() {
   console.log(3 % 2);
 };
+function threeModTwo() {
+  console.log(3 % 2);
+}
+
 
 let age = 18;
 const checkDrivingAge = function() {
@@ -15,3 +23,10 @@ const checkDrivingAge = function() {
     console.log(false);
   }
 };
+function checkDrivingAge() {
+  if (age >= 16) {
+    console.log(true);
+  } else {
+    console.log(false);
+  }
+}
